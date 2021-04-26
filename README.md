@@ -3,6 +3,7 @@
 A script using ArcFace age estimator to remove incorrectly labeled images
 
 ## Usage
+1. use age estimator to remove incorrectly labeled images
 
 To clean images in the `childhood/`, do 
 ```bash
@@ -22,3 +23,17 @@ python main.py -i large_img -o childhood_clean -e childhood_err -u childhood_unk
 ```
 
 ⭕️This may cause your PC run out of memory and crash. 
+
+
+2. normalise image filename
+- remove space in filename
+- replace filename with a uuid
+- set the hierarchical file structure to a plat file structure
+- replace "|" with "_" in the filename
+- build a mapping table between original filename and the uuid
+
+```python
+python 
+```
+
+
